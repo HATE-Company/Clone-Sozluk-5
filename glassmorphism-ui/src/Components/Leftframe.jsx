@@ -7,7 +7,7 @@ import television from '../icons/television.svg';
 import celebrity from '../icons/celebrity.svg';
 import business from '../icons/business.png';
 import more from '../icons/more.svg';
-
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Leftframe() {
   return (
@@ -17,31 +17,129 @@ function Leftframe() {
     <ListGroup className=' bg-secondary bg-opacity-25 text-center p-3  '>
         
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25 ' >
-          Topics
+
+          <Dropdown>
+
+            <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+              Topics
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+                <Dropdown.Item >Action</Dropdown.Item>
+                <Dropdown.Item >Another action</Dropdown.Item>
+                <Dropdown.Item >Something else</Dropdown.Item>
+            </Dropdown.Menu>
+
+          </Dropdown>
+
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={game} alt="game" /> Gaming
+
+          <Dropdown>
+
+              <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+                <img src={ game } alt="game" /> Gaming
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item >Action</Dropdown.Item>
+                <Dropdown.Item >Another action</Dropdown.Item>
+                <Dropdown.Item >Something else</Dropdown.Item>
+              </Dropdown.Menu>
+
+          </Dropdown>
+          
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={sports} alt="sports" /> Sports
+
+          <Dropdown>
+
+            <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+              <img src={sports} alt="sports" /> Sports
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item >Action</Dropdown.Item>
+              <Dropdown.Item >Another action</Dropdown.Item>
+              <Dropdown.Item >Something else</Dropdown.Item>
+            </Dropdown.Menu>
+
+          </Dropdown>
+
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={television} alt="television" /> Television
+
+          <Dropdown>
+
+              <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+              <img src={television} alt="television" /> Television
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item >Action</Dropdown.Item>
+                <Dropdown.Item >Another action</Dropdown.Item>
+                <Dropdown.Item >Something else</Dropdown.Item>
+              </Dropdown.Menu>
+
+            </Dropdown>
+          
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={celebrity} alt="celebrity" /> Celebrity
+
+          <Dropdown>
+
+              <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+                <img src={celebrity} alt="celebrity" /> Celebrity
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item >Action</Dropdown.Item>
+                <Dropdown.Item >Another action</Dropdown.Item>
+                <Dropdown.Item >Something else</Dropdown.Item>
+              </Dropdown.Menu>
+
+            </Dropdown>
+          
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={business} alt="business" /> Business
+
+          <Dropdown>
+
+            <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+              <img src={business} alt="business" /> Business
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item >Action</Dropdown.Item>
+              <Dropdown.Item >Another action</Dropdown.Item>
+              <Dropdown.Item >Something else</Dropdown.Item>
+            </Dropdown.Menu>
+
+          </Dropdown>
+          
         </ListGroup.Item>
 
         <ListGroup.Item className='border-0 text-white bg-secondary bg-opacity-25' >
-          <img src={more} alt="more" /> More
+
+          <Dropdown>
+
+              <Dropdown.Toggle variant="" id="dropdown-basic" className='text-white'>
+                <img src={more} alt="more" /> More
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item >Action</Dropdown.Item>
+                <Dropdown.Item >Another action</Dropdown.Item>
+                <Dropdown.Item >Something else</Dropdown.Item>
+              </Dropdown.Menu>
+
+          </Dropdown>
+          
         </ListGroup.Item>
 
     </ListGroup>
