@@ -3,10 +3,9 @@ import Leftframe from './Leftframe';
 import Rightframe from './Rightframe';
 import Centerframe from './Centerframe';
 
-
 function Layout() {
   return (
-
+    <>
       <div className='col-xl-11 px-3 mx-auto '>
         <div className='row gap-3'>
 
@@ -25,7 +24,7 @@ function Layout() {
         </div>
 
       </div>
-    
+    </>
   );
 }
 
