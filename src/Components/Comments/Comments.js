@@ -73,7 +73,6 @@ const Comments = ({ commentsUrl, currentUserId }) => {
             deleteComment={deleteComment}
             updateComment={updateComment}
             currentUserId={currentUserId}
-            imageUrl={rootComment.imageUrl}
           />
         ))}
       </div>

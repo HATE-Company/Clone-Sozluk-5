@@ -1,66 +1,48 @@
 import CommentForm from "./CommentForm";
 
-const Comment = ({
-  comment,
-  replies,
-  setActiveComment,
-  activeComment,
-  updateComment,
-  deleteComment,
-  addComment,
-  parentId = null,
-  currentUserId,
+const Comment = ({ comment, replies, setActiveComment, activeComment, updateComment, deleteComment, addComment, 
+  parentId = null, currentUserId,
 }) => {
-  const isEditing =
-    activeComment &&
-    activeComment.id === comment.id &&
-    activeComment.type === "editing";
-  const isReplying =
-    activeComment &&
-    activeComment.id === comment.id &&
-    activeComment.type === "replying";
+  const { id, username, body, createdAt, image } = comment;
+  const isEditing = activeComment && activeComment.id === id && activeComment.type === "editing";
+  const isReplying = activeComment && activeComment.id === id && activeComment.type === "replying";
   const fiveMinutes = 300000;
-  const timePassed = new Date() - new Date(comment.createdAt) > fiveMinutes;
-  const canDelete =
-    currentUserId === comment.userId && replies.length === 0 && !timePassed;
+  const timePassed = new Date() - new Date(createdAt) > fiveMinutes;
+  const canDelete = currentUserId === comment.userId && replies.length === 0 && !timePassed;
   const canReply = Boolean(currentUserId);
   const canEdit = currentUserId === comment.userId && !timePassed;
-  const replyId = parentId ? parentId : comment.id;
-  const createdAt = new Date(comment.createdAt).toLocaleDateString()
-  const image = comment.imageUrl ? comment.imageUrl : null;
+  const replyId = parentId ? parentId : id;
+  const createdAtDate = new Date(createdAt).toLocaleDateString();
 
   return (
-    <div key={comment.id} className="comment">
-      <div className="comment-image-container">
-        <img src="/user.png" alt=""  />
-        
-      </div>
-      <div className="comment-right-part">
-        <div className="comment-content">
-          <div className="comment-author">{comment.username}</div>
-          <div>{createdAt}</div>
-          {image && <img src={comment.imageUrl} alt="" />}
-          {image}
+    <div key={id} className="comment">
+
+        <div className="comment-image-container">
+          <img src="/user.png" alt=""  />
         </div>
-        {!isEditing && <div className="comment-text">{comment.body}</div>}
+
+        <div className="comment-right-part">
+          <div className="comment-content">
+            <div className="comment-author">{username}</div>
+            <div>{createdAtDate}</div>
+          </div>
+            {image}
+
+        {!isEditing && <div className="comment-text">{body}</div>}
         {isEditing && (
           <CommentForm
             submitLabel="Update"
             hasCancelButton
-            initialText={comment.body}
-            handleSubmit={(text) => updateComment(text, comment.id)}
-            handleCancel={() => {
-              setActiveComment(null);
-            }}
+            initialText={body}
+            handleSubmit={(text) => updateComment(text, id)}
+            handleCancel={() => setActiveComment(null)}
           />
         )}
         <div className="comment-actions">
           {canReply && (
             <div
               className="comment-action"
-              onClick={() =>
-                setActiveComment({ id: comment.id, type: "replying" })
-              }
+              onClick={() => setActiveComment({ id, type: "replying" })}
             >
               Reply
             </div>
@@ -68,9 +50,7 @@ const Comment = ({
           {canEdit && (
             <div
               className="comment-action"
-              onClick={() =>
-                setActiveComment({ id: comment.id, type: "editing" })
-              }
+              onClick={() => setActiveComment({ id, type: "editing" })}
             >
               Edit
             </div>
@@ -78,7 +58,7 @@ const Comment = ({
           {canDelete && (
             <div
               className="comment-action"
-              onClick={() => deleteComment(comment.id)}
+              onClick={() => deleteComment(id)}
             >
               Delete
             </div>
@@ -109,6 +89,7 @@ const Comment = ({
           </div>
         )}
       </div>
+
     </div>
   );
 };
