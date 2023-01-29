@@ -1,4 +1,3 @@
-// import comments from "../src/Components/Comments/comments.json";
 
 import commentsData from "./Components/Comments/commentsData";
 

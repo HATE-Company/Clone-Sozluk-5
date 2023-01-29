@@ -11,7 +11,7 @@ const Centerframe = () => {
 
         <div>
           <Comments
-            commentsUrl="http://localhost:3001/comments"
+            commentsUrl="http://localhost:3000/comments"
             currentUserId="1"
           />
         </div>

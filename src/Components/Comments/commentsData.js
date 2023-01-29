@@ -13,7 +13,7 @@ const commentsData = [
       "userId": "2",
       "parentId": null,
       "username": "CryptoCurrent",
-      "image": "/public/user.png",
+      "image": "/src/crypto.svg",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "createdAt": "2021-08-16T23:00:33.010+02:00"
     },
