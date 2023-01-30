@@ -1,0 +1,48 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    background: #101E42;
+    background-image: url(/public/images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+
+  }
+
+
+  
+  .container {
+    display: grid;
+    margin-top: 48px;
+    grid-template-columns: 1fr min(768px, 96%) 1fr;
+  }
+  
+  .container > * {
+    grid-column: 2;
+  }
+
+
+
+  .dropdown-menu {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+  }
+
+  div.comments {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
