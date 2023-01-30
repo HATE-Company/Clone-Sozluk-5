@@ -4,7 +4,7 @@ import "./styles/reset.scss";
 import "./styles/variables.scss";
 import "./styles/global.scss";
 
-import NavSearch from "./components/Navbar";
+import NavSearch from "/src/components/Navbar.jsx";
 import Layout from "./components/Layout";
 import Loginbox from "./components/Loginbox";
 
