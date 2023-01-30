@@ -5,7 +5,7 @@ import { useComment } from "../useComment";
 function Header() {
   const {
     ownByCurrentUser,
-    comment: { user, createdAt },
+    comment: { user, createdAt},
   } = useComment();
 
   return (
@@ -18,7 +18,6 @@ function Header() {
       <p className={styles.username}>{user.username}</p>
       {ownByCurrentUser && <span className={styles.ownIndicator}>you</span>}
       <p className={styles.createdAt}>{createdAt}</p>
-
     </div>
   );
 }

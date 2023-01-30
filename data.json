@@ -10,7 +10,7 @@
       {
         "id": 1,
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-        "createdAt": "1 month ago",
+        "createdAt": "1 minute ago",
         "score": 12,
         "user": {
           "image": {
@@ -24,7 +24,11 @@
       {
         "id": 2,
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-        "createdAt": "1 month ago",
+        "image": {
+          "png": "./images/avatars/image-crypto.png",
+          "webp": "./images/avatars/image-crypto.webp"
+        },
+        "createdAt": "3 minute ago",
         "score": 12,
         "user": {
           "image": {
@@ -38,7 +42,7 @@
       {
         "id": 3,
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-        "createdAt": "2 weeks ago",
+        "createdAt": "5 minutes ago",
         "score": 5,
         "user": {
           "image": {
@@ -52,7 +56,7 @@
           {
             "id": 4,
             "content": "If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
-            "createdAt": "1 week ago",
+            "createdAt": "7 minutes ago",
             "score": 4,
             "replyingTo": "Prettyflw",
             "user": {

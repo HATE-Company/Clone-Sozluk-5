@@ -11,23 +11,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Rubik", sans-serif;
-    font-size: 1rem;
-
-  }
-
-
-  
-  .container {
-    display: grid;
-    margin-top: 48px;
-    grid-template-columns: 1fr min(768px, 96%) 1fr;
+    font-size: 1.2rem;
   }
   
-  .container > * {
-    grid-column: 2;
+  .comment-container {
+    margin: 3rem;
   }
-
-
 
   .dropdown-menu {
     background: rgba( 255, 255, 255, 0.2 );
@@ -37,12 +26,4 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   
-  }
-
-  div.comments {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
   }

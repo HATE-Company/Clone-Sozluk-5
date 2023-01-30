@@ -5,16 +5,25 @@ import { useComment } from "../../useComment";
 
 function Preview() {
   const {
-    comment: { replyingTo, content },
+    comment: { replyingTo, content, image, user },
   } = useComment();
 
   return (
-    <p>
-      {!!replyingTo && (
-        <span className={styles.commentReplyingTo}>@{replyingTo}&nbsp;</span>
-      )}
-      {content}
-    </p>
+    <div>
+      <p>
+        {!!replyingTo && (
+          <span className={styles.commentReplyingTo}>@{replyingTo}&nbsp;</span>
+        )}
+        {content}
+      </p>
+            {image && (
+              <img
+                className={styles.commentImage}
+                src={image.webp}
+                alt={user.username}
+              />
+            )}
+    </div>
   );
 }
 

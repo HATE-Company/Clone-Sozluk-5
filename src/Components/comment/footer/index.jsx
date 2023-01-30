@@ -19,17 +19,17 @@ function Footer() {
         {ownByCurrentUser ? (
           <>
             <Button onClick={onDelete} variant="warn">
-              <img src="./images/icon-delete.svg" aria-hidden="true" height={25} />
+              <img src="./images/icon-delete.svg" alt="delete-button" aria-hidden="true" height={25} />
               Delete
             </Button>
             <Button onClick={onEdit}>
-              <img src="./images/icon-reply.svg" aria-hidden="true" height={25} />
+              <img src="./images/icon-reply.svg" alt="edit-button" aria-hidden="true" height={25} />
               Edit
             </Button>
           </>
         ) : (
           <Button onClick={onReply}>
-            <img src="./images/icon-reply.svg" aria-hidden="true" height={25} />
+            <img src="./images/icon-reply.svg" alt="reply-button" aria-hidden="true" height={36} />
             Reply
           </Button>
         )}

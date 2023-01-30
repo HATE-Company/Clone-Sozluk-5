@@ -1,9 +1,9 @@
 .commentWrapper {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+
     background-color: var(--black-dark);
-    padding: 24px;
+    padding: 1rem;
     border-radius: 8px;
     width: 100%;
   }
@@ -11,7 +11,7 @@
   .commentContent {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.5rem;
     flex: 1;
   }
   
