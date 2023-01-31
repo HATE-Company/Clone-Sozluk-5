@@ -39,15 +39,15 @@ function Leftframe() {
               <div className={activeItem === 'home' ? 'active' : ''}>Topics</div>
             </div>
 
-            <div className="sidebar-item p-3 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu(!showSubmenu)}>
+            <div className="sidebar-item p-2 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu(!showSubmenu)}>
               <div className='row'>
 
                   <div className='col'>
-                    <img src={ game } alt="game" className=''/>
+                    <img src={ game } alt="game" className='p-2'/>
                     Gaming
                   </div>
 
-                  <div className='col'>
+                  <div className='col-auto'>
                     <FontAwesomeIcon icon={showSubmenu ? 'caret-down' : 'caret-right'} className="" id='svg'/> 
                   </div>
               
@@ -55,32 +55,32 @@ function Leftframe() {
             </div>
 
                 {showSubmenu && (
-                  <div className="submenu ms-5">
+                  <div className="submenu ms-5 ">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
                   </div>
                 )}
           
-            <div className="sidebar-item p-3 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu1(!showSubmenu1)}>
+            <div className="sidebar-item p-2 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu1(!showSubmenu1)}>
 
               <div className='row'>
 
                   <div className='col'>
-                    <img src={sports} alt="sports" className=''/> Sports
+                    <img src={sports} alt="sports" className='p-2'/> Sports
                   </div>
 
-                  <div className='col'>
+                  <div className='col-auto'>
                     <FontAwesomeIcon icon={showSubmenu1 ? 'caret-down' : 'caret-right'} className="" />
                   </div>
 
@@ -91,30 +91,30 @@ function Leftframe() {
                 {showSubmenu1 && (
                   <div className="submenu ms-5">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
                   </div>
                 )}
 
-            <div className="sidebar-item p-3 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu2(!showSubmenu2)}>
+            <div className="sidebar-item p-2 ms-5 rounded-3 mt-3" onClick={() => setShowSubmenu2(!showSubmenu2)}>
 
               <div className='row'>
 
                 <div className='col'>
-                  <img src={television} alt="television" className=''/> Television
+                  <img src={television} alt="television" className='p-2'/> Television
                 </div>
 
-                <div className='col'>
+                <div className='col-auto'>
                   <FontAwesomeIcon icon={showSubmenu2 ? 'caret-down' : 'caret-right'} className="" />
                 </div>
 
@@ -125,30 +125,30 @@ function Leftframe() {
                 {showSubmenu2 && (
                   <div className="submenu ms-5">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
                   </div>
                 )}
 
-            <div className="sidebar-item ms-5 rounded-3 p-3 mt-3" onClick={() => setShowSubmenu3(!showSubmenu3)}>
+            <div className="sidebar-item ms-5 rounded-3 p-2 mt-3" onClick={() => setShowSubmenu3(!showSubmenu3)}>
 
               <div className='row'>
 
                   <div className='col'>
-                    <img src={celebrity} alt="celebrity" className='' /> Celebrity
+                    <img src={celebrity} alt="celebrity" className='p-2' /> Celebrity
                   </div>
 
-                  <div className='col'>
+                  <div className='col-auto'>
                     <FontAwesomeIcon icon={showSubmenu3 ? 'caret-down' : 'caret-right'} className="" />
                   </div>
 
@@ -159,30 +159,30 @@ function Leftframe() {
                 {showSubmenu3 && (
                   <div className="submenu ms-5">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
                   </div>
                 )}
 
-            <div className="sidebar-item ms-5 rounded-3 p-3 mt-3" onClick={() => setShowSubmenu4(!showSubmenu4)}>
+            <div className="sidebar-item ms-5 rounded-3 p-2 mt-3" onClick={() => setShowSubmenu4(!showSubmenu4)}>
 
                 <div className='row'>
 
                   <div className='col'>
-                    <img src={business} alt="business" className='' /> Business
+                    <img src={business} alt="business" className='p-2' /> Business
                   </div>
 
-                  <div className='col'>
+                  <div className='col-auto'>
                     <FontAwesomeIcon icon={showSubmenu4 ? 'caret-down' : 'caret-right'} className="" />
                   </div>
 
@@ -193,31 +193,30 @@ function Leftframe() {
                 {showSubmenu4 && (
                   <div className="submenu ms-5">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
                   </div>
                 )}
 
-            <div className="sidebar-item ms-5 rounded-3 p-3 mt-3" onClick={() => setShowSubmenu5(!showSubmenu5)}>
+            <div className="sidebar-item ms-5 rounded-3 p-2 mt-3" onClick={() => setShowSubmenu5(!showSubmenu5)}>
 
-            
               <div className='row'>
 
                   <div className='col '>
-                    <img src={more} alt="more" className='' /> More
+                    <img src={more} alt="more" className='p-2' /> More
                   </div>
 
-                  <div className='col '>
+                  <div className=' col-auto '>
                       <FontAwesomeIcon icon={showSubmenu5 ? 'caret-down' : 'caret-right'} className="" />
                   </div>
 
@@ -228,15 +227,15 @@ function Leftframe() {
                 {showSubmenu5 && (
                   <div className="submenu ms-5 ">
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/1')}>
                       <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/2')}>
                       <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
                     </div>
 
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+                    <div className="submenu-item ms-5 p-2 rounded-3" onClick={() => setActiveItem('products/3')}>
                       <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
                     </div>
 
