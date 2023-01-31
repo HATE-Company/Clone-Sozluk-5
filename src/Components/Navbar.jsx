@@ -1,10 +1,9 @@
-// import React, { useState } from 'react';
 
+/* 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../images/logo.svg';
 import user from '../images/user.svg';
 import search from '../icons/search.svg';
-
 
 function NavSearch() {
 
@@ -51,10 +50,8 @@ function NavSearch() {
                     <NavDropdown.Item href="#action5">Profile</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action6">Sign Out</NavDropdown.Item>
-
                 </NavDropdown>
 
-          
       </div>
 
 
@@ -64,10 +61,11 @@ function NavSearch() {
 
 export default NavSearch;
 
-
+ */
 
 
 /* 
+import React, { useState } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -76,44 +74,40 @@ library.add(faCaretDown, faCaretRight);
 
  */
 
-
-/*   
-  const [activeItem, setActiveItem] = useState('home');
-
-  const [showSubmenu, setShowSubmenu] = useState(false); 
-
-  */
+/* 
+const [activeItem, setActiveItem] = useState('home');
+const [showSubmenu, setShowSubmenu] = useState(false); 
+ */
 
 
+/* 
+<div className="container text-white p-3">
+<div className='login-item' onClick={() => setShowSubmenu(!showSubmenu)}>
 
- {/* 
-      <div className="container text-white p-3">
-        <div className='login-item' onClick={() => setShowSubmenu(!showSubmenu)}>
+  <div className=''>
+      <img src={ user } alt="game" className=''/>
+      <FontAwesomeIcon icon={showSubmenu ? 'caret-down' : 'caret-right'} className="" id='svg'/> 
+  </div>
 
-          <div className=''>
-              <img src={ user } alt="game" className=''/>
-              <FontAwesomeIcon icon={showSubmenu ? 'caret-down' : 'caret-right'} className="" id='svg'/> 
+</div>
+</div>
+
+{showSubmenu && (
+          <div className="submenu ms-5 text-white w-25 ">
+
+            <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
+              <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
+            </div>
+
+            <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
+              <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
+            </div>
+
+            <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
+              <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
+            </div>
+
           </div>
+        )}
 
-        </div>
-      </div>
-
-      {showSubmenu && (
-                  <div className="submenu ms-5 text-white min-vw-100 ">
-
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/1')}>
-                      <div className={activeItem === 'products/1' ? 'active' : ''}>products1</div>
-                    </div>
-
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/2')}>
-                      <div className={activeItem === 'products/2' ? 'active' : ''}>products2</div>
-                    </div>
-
-                    <div className="submenu-item ms-5 rounded-3" onClick={() => setActiveItem('products/3')}>
-                      <div className={activeItem === 'products/3' ? 'active' : ''}>products3</div>
-                    </div>
-
-                  </div>
-                )}
-
- */}
+ */
