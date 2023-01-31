@@ -1,5 +1,3 @@
-
-/* 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../images/logo.svg';
 import user from '../images/user.svg';
@@ -61,7 +59,7 @@ function NavSearch() {
 
 export default NavSearch;
 
- */
+
 
 
 /* 
