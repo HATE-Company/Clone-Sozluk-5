@@ -57,7 +57,7 @@ function NavSearch() {
   );
 }
 
-export default NavSearch;
+export { NavSearch } ;
 
 
 

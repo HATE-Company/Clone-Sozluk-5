@@ -28,4 +28,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export { Layout };

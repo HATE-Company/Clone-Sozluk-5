@@ -26,4 +26,4 @@ function Loginbox() {
   )
 }
 
-export default Loginbox
+export { Loginbox } ;
