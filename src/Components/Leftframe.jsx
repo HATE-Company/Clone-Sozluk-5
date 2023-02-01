@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 import { Container } from 'react-bootstrap';
-import logo from '../images/logo.svg';
 import game from '../icons/game.svg';
 import sports from '../icons/sports.svg';
 import television from '../icons/television.svg';
 import celebrity from '../icons/celebrity.svg';
 import business from '../icons/business.png';
 import more from '../icons/more.svg';
+// import logo from '../images/logo.svg';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -33,9 +33,9 @@ function Leftframe() {
     <Container className='text-white p-3 ' >
 
 
-      <div className="sidebar text-white bg-secondary bg-opacity-25  rounded-3 p-3 ">
+      <div className="sidebar text-white bg-secondary bg-opacity-25 rounded-3 p-3 ">
 
-            <div className="sidebar-item text-center p-2" onClick={() => setActiveItem('home')}>
+            <div className="sidebar-item text-center  p-2" onClick={() => setActiveItem('home')}>
               <div className={activeItem === 'home' ? 'active' : ''}>Topics</div>
             </div>
 
@@ -243,7 +243,7 @@ function Leftframe() {
                 )}
 
       </div>
-
+{/* 
                   <div className="sidebar text-white bg-secondary bg-opacity-25  rounded-3 p-3 mt-4">
 
                       <div className='border-0'>
@@ -276,6 +276,7 @@ function Leftframe() {
 
                   </div>
 
+ */}
     </Container>
   );
 }

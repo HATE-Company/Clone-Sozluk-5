@@ -3,12 +3,13 @@ import logo from '../images/logo.svg';
 import user from '../images/user.svg';
 import search from '../icons/search.svg';
 
-function NavSearch() {
+
+function Navbar() {
 
   return (
 
     <>
-      <div className="d-flex flex-row justify-content-between m-5 p-5 " >
+      <div className="d-flex flex-row justify-content-between p-5 me-5 ms-5 mb-5 " >
 
           <div className=' ms-5 '>
               <img src={logo} alt="logo" className='' />
@@ -57,7 +58,7 @@ function NavSearch() {
   );
 }
 
-export { NavSearch } ;
+export { Navbar } ;
 
 
 
