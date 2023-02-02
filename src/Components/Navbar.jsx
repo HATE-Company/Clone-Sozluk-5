@@ -1,7 +1,7 @@
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../images/logo.svg';
 import user from '../images/user.svg';
-import search from '../icons/search.svg';
+import search from '../icons/search.png';
 
 
 function Navbar() {
@@ -20,7 +20,6 @@ function Navbar() {
 
               <span className="input-group-text bg-transparent border-0 " id="search-addon">
                 <button type="button" className="btn">
-                <i className="fas fa-search"></i>
                   {<img src={ search } alt="search" /> } 
                 </button>
               </span>
